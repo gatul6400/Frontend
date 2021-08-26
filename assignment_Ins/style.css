@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    /* max-width: ; */
+}
+header{
+    background-color: lightgreen;
+    text-align: center;
+    border: 2px solid black;
+    padding: 15px;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+#main{
+    background-color:lightskyblue;
+    width: 70%;
+    text-align: center;
+    border: 2px solid black;
+    height: 573px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#content{
+    background-color:lightcoral;
+    width: 29%;
+    height: 183px;
+    text-align: center;
+    border: 2px solid black;
+    position: absolute;
+    left: 0;
+}
+#facebook{
+    background-color:lightcoral;
+    width: 29%;
+    height: 183px;
+    text-align: center;
+    border: 2px solid black;
+    position: absolute;
+    left: 0;
+    top: 195px;
+}
+#twitter{
+    background-color:lightcoral;
+    width: 29%;
+    height: 183px;
+    text-align: center;
+    border: 2px solid black;
+    position: absolute;
+    left: 0;
+    top: 390px;
+}
+footer{
+    margin-top: 580px;
+    background-color: lightgreen;
+    text-align: center;
+    border: 2px solid black;
+    padding: 15px;
+}
