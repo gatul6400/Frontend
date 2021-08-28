@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f2f2f2;
+    padding: 0 16px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-actions {
+    height: 40px;
+    margin-right: 16px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f2f2f2;
+    padding: 0 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+}
+
+.footer-action {
+    height: 40px;
+    margin-right: 24px;
+}
+
+.user {
+    border-radius: 50%;
+}
+
+.status-container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 1px solid #f2f2f2;
+    height: 130px;
+    overflow-x: auto;
+}
+
+.status-container::-webkit-scrollbar {
+    display: none;
+}
+
+.status {
+    padding: 16px 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    align-items: center;
+    height: 130px;
+    justify-content: center;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid pink;
+    padding: 3px;
+}
+
+.username {
+    padding: 5px;
+}
+
+
+.posts-container{
+    margin-bottom: 50px;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.more-options{
+    height: 40px;
+}
+.sender-name{
+    margin-left: 10px;
+}
+.sender-info{
+    display: flex;
+    align-items: center;
+}
+
+.post {
+    padding-bottom: 16px;
+}
+
+
+.post-image{
+    height: 100%;
+    width: 100%;
+}
+.post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post-action{
+    height: 40px;
+}
+.likes-section{
+    font-weight: bold;
+}
+.likes-count{
+    padding: 0 12px;
+}
