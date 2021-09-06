@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Frontend Mentor | Order Summary Card</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* align-content: center; */
+        }
+
+        body {
+            background: url(assets/pattern-background-desktop.svg);
+            /* background: url(assets/pattern-background-mobile.svg); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: hsl(225, 100%, 94%);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        .container {
+            /* background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: white;
+            /* position: relative; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* flex-wrap: nowrap; */
+            /* flex-basis: auto; */
+            align-items: center;
+            /* align-content: flex-start; */
+            margin: auto;
+            border-radius: 25px;
+            width: 300px;
+            /* max-width: 20%;
+            max-height: 25%;
+            min-width: 325px;
+            min-height: 600px; */
+            /* margin-top: 75px; */
+            /* margin-bottom: 75px; */
+
+            /* border: 2px solid black; */
+            /* width: 375px;
+            height: 667px; */
+        }
+
+        .card-head {
+            /* position: absolute; */
+            /* bottom: 0; */
+            display: flex;
+        }
+
+        .girl-image {
+            /* padding-bottom: 5%; */
+            background-position: center;
+            align-self: stretch;
+            border-radius: 25px 25px 0 0;
+            flex-basis: auto;
+            width: 100%;
+            /* height: 150px; */
+        }
+
+        .heading {
+            /* margin: auto; */
+            /* padding: 34px; */
+            text-align: center;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* flex-wrap: nowrap; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .order-summary {
+            font-size: x-large;
+            padding: 34px;
+            /* text-align: center; */
+            /* padding-bottom: 10px; */
+            font-weight: 900;
+        }
+
+        .details {
+            margin: 0 10% 5% 10%;
+            font-size: 14px;
+            font-weight: 500;
+            /* text-align: center; */
+            color: gray;
+            opacity: 0.8;
+            /* font-stretch:wider; */
+        }
+
+        .payment-card {
+            height: 90px;
+            width: 80%;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+            /* margin: 15px 25px; */
+            padding: 5px 16px;
+            position: relative;
+            background-color: hsl(225, 100%, 98%);
+        }
+
+        .plan-details {
+            /* justify-content: flex-start; */
+            /* flex-direction: row; */
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+
+        .music-icon {
+            position: absolute;
+            height: 50px;
+            top: 20px;
+            left: 15px;
+        }
+
+        .annual-plan {
+            display: flex;
+            /* position: absolute; */
+            font-size: 12px;
+            flex-direction: column;
+            padding-left: 60px;
+            /* left: 50px; */
+            /* font-weight: 500; */
+        }
+
+        span {
+            padding: 2px;
+        }
+
+        .annual-text {
+            font-weight: 900;
+        }
+
+        .price {
+            font-size: 13px;
+            /* text-align: center; */
+            color: gray;
+            opacity: 0.8;
+        }
+
+        .change {
+            font-size: 13px;
+            font-weight: bold;
+            color: hsl(245, 75%, 52%);
+        }
+
+        .proceed-to-payment {
+            margin-top: 10px;
+            height: 50px;
+            display: flex;
+            align-items:stretch;
+            justify-content: center;
+            /* padding: 0 20px; */
+        }
+        .btn{
+            background-color: hsl(245, 75%, 52%);
+            color: white;
+            padding: 0 60px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        @media screen and (max-width: 375px) {
+            .container{
+                /* background: url(assets/pattern-background-mobile.svg); */
+                min-width: 90%;
+            }
+        }
+    </style>
+    <div class="container">
+        <section class="card-head">
+            <img src="assets/illustration-hero.svg" alt="" class="girl-image">
+        </section>
+        <div class="card-body">
+            <section class="heading">
+                <span class="order-summary">Order Summary</span>
+                <p class="details">You can now listen to millions of songs, audiobooks, and podcasts on any device
+                    anywhere you like!</p>
+            </section>
+            <section class="payment-card">
+                <div class="plan-detail">
+                    <img src="assets/icon-music.svg" alt="Music-Icon" class="music-icon">
+                    <div class="annual-plan">
+                        <span class="annual-text">Annual Plan</span>
+                        <span class="price">$59.99/year</span>
+                    </div>
+                </div>
+                <div class="change">
+                    <a href="#change">Change</a>
+                </div>
+            </section>
+        </div>
+        <div class="proceed-to-payment">
+            <button class="btn">Proceed to Payment </button>
+        </div>
+        <!-- <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+    </div>
+</body>
+
+</html> -->
+
+   <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(assets/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            /* width: 100%; */
+            /* height: 100%; */
+            /* margin: auto; */
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+        }
+
+        .container {
+            height: 600px;
+            width: 375px;
+            background: white;
+            border: 2px solid black;
+        }
+        .hero_image{
+            width: 100%;
+        }
+    </style> -->

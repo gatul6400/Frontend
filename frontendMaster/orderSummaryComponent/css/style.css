@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background: url('../assets/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    position: relative;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 425px;
+    min-width: 325px;
+    min-height: 525px;
+    background-color: white;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.card_image{
+    position: contain;
+}
+
+.card_image img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card_content{
+    padding: 7%;
+    text-align: center;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.subtitle{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    margin: 0 2px;
+    margin-bottom: 25px;
+}
+
+.plan_box{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.plan_box_left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.info{
+    margin-left: 20px;
+}
+
+.plan_box_left div h4{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.plan_box_left div p{
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+
+.change{
+    color : hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.plan_box a:hover{
+    text-decoration: none;
+    color: #766cf1;
+}
+
+.btn{
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 900;
+    margin-bottom: 35px;
+    border: none;
+    box-shadow: 5px 15px 12px #dcd8fa;
+}
+
+button:hover{
+    background-color: #766cf1;
+}
+
+.cancel_btn{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #2b324c;
+}
+.attribution{
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        background-image: url(assets/pattern-background-mobile.svg);
+    }
+    
+}
